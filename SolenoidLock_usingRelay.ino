@@ -6,8 +6,8 @@
 WebServer server(80);
 bool isLocked = true;
 
-const char* ssid     = "Realme";
-const char* password = "12345678";
+const char* ssid     = "";
+const char* password = "";
 
 String getPage() {
   String stateText = isLocked ? "LOCKED" : "UNLOCKED";
@@ -109,4 +109,5 @@ void setup() {
 
 void loop() {
   server.handleClient();
+
 }
